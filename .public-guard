@@ -1,0 +1,22 @@
+# Strings that must never appear in the public snapshot. tools/sync-public.ps1 runs
+# `git grep -F -f` against the snapshot tree and refuses to push on any hit.
+# Fixed strings only (no regex) - that is what -F buys us: no escaping surprises.
+# This file itself is skipped by the scan (it necessarily contains the words it forbids).
+# Not guarded on purpose: "投递" - in this codebase it means posting key events to a window
+# (HotkeyAdapter / KeySpec), and the first dry run proved that by refusing a legitimate file.
+简历
+求职
+面试
+秋招
+八股
+面渣
+内推
+PaiCLI
+codex-daily
+D:\桌面
+D:/桌面
+C:\Users
+C:/Users
+@qq.com
+@163.com
+@gmail.com
