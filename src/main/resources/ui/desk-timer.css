@@ -1,0 +1,117 @@
+.root {
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-font-smoothing-type: gray;
+}
+.text-input {
+    -fx-text-fill: -timer-text;
+    -fx-prompt-text-fill: -timer-muted;
+    -fx-highlight-fill: -timer-accent;
+    -fx-highlight-text-fill: -timer-input;
+    -fx-background-color: -timer-input;
+    -fx-background-insets: 0;
+    -fx-background-radius: 8;
+    -fx-border-color: -timer-border;
+    -fx-border-radius: 8;
+    -fx-padding: 10 12;
+}
+.text-input:focused {
+    -fx-border-color: -timer-accent;
+}
+.button {
+    -fx-background-color: -timer-input;
+    -fx-border-color: -timer-border;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+}
+.button:hover, .button:focused {
+    -fx-border-color: -timer-accent;
+}
+.progress-bar {
+    -fx-pref-height: 6;
+    -fx-min-height: 6;
+    -fx-max-height: 6;
+}
+.progress-bar > .track {
+    -fx-background-color: -timer-input;
+    -fx-background-insets: 0;
+    -fx-background-radius: 3;
+}
+.progress-bar > .bar {
+    -fx-background-color: -timer-accent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 3;
+    -fx-padding: 3;
+}
+.check-box {
+    -fx-text-fill: -timer-text;
+}
+.check-box > .box {
+    -fx-background-color: -timer-input;
+    -fx-border-color: -timer-border;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+.check-box:selected > .box > .mark {
+    -fx-background-color: -timer-accent;
+}
+.label, .button, .list-cell, .combo-box .list-cell {
+    -fx-text-fill: -timer-text;
+}
+.button { -fx-background-radius: 8; -fx-padding: 8 12; }
+.tab-pane > .tab-header-area > .tab-header-background,
+.tab-pane .tab, .list-view, .list-cell, .combo-box, .spinner {
+    -fx-background-color: -timer-input;
+}
+.tab-pane .tab .tab-label { -fx-text-fill: -timer-text; }
+.tab-pane .tab:selected, .list-cell:selected { -fx-border-color: -timer-accent; }
+.list-cell { -fx-padding: 12; }
+.list-cell:filled:selected { -fx-background-color: -timer-border; }
+.list-view { -fx-background-insets: 0; -fx-border-color: -timer-border; -fx-border-radius: 8; }
+.tab-pane > .tab-content-area { -fx-padding: 16 0 0 0; }
+.spinner > .increment-arrow-button, .spinner > .decrement-arrow-button,
+.date-picker > .arrow-button { -fx-background-color: -timer-input; }
+.spinner .increment-arrow, .spinner .decrement-arrow,
+.date-picker .arrow-button .arrow { -fx-background-color: -timer-text; }
+
+/* Theme all container skins, including ScrollPane's separate viewport. */
+.scroll-pane, .scroll-pane > .viewport, .scroll-pane > .corner {
+    -fx-background-color: -timer-bg;
+    -fx-background-insets: 0;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+.scroll-bar, .scroll-bar > .track, .scroll-bar > .increment-button, .scroll-bar > .decrement-button {
+    -fx-background-color: -timer-bg;
+    -fx-background-insets: 0;
+}
+.scroll-bar > .thumb { -fx-background-color: -timer-border; -fx-background-radius: 8; }
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow { -fx-background-color: -timer-muted; }
+.tab-pane > .tab-header-area > .tab-header-background { -fx-background-color: transparent; }
+.tab-pane .tab { -fx-background-color: transparent; -fx-padding: 8 16; -fx-background-radius: 8 8 0 0; }
+.tab-pane .tab:selected { -fx-background-color: -timer-surface; -fx-border-width: 0 0 2 0; }
+.tab-pane .tab .focus-indicator { -fx-border-width: 0; }
+.list-cell { -fx-background-color: -timer-bg; }
+.list-cell:filled:hover { -fx-background-color: -timer-surface; }
+.list-cell:filled:selected { -fx-background-color: -timer-border; -fx-text-fill: -timer-text; }
+.combo-box, .date-picker, .spinner { -fx-background-radius: 8; -fx-border-radius: 8; }
+.combo-box > .list-cell { -fx-background-color: transparent; }
+.combo-box-popup > .list-view { -fx-background-color: -timer-bg; }
+.date-picker-popup, .date-picker-popup > .month-year-pane,
+.date-picker-popup > .calendar-grid { -fx-background-color: -timer-bg; }
+.date-picker-popup .day-cell { -fx-background-color: -timer-bg; -fx-text-fill: -timer-text; }
+.date-picker-popup .day-cell:hover { -fx-background-color: -timer-surface; }
+.date-picker-popup .day-cell:selected { -fx-background-color: -timer-accent; -fx-text-fill: -timer-on-accent; }
+.settings-card {
+    -fx-background-color: -timer-surface;
+    -fx-background-radius: 12;
+    -fx-padding: 16;
+    -fx-spacing: 12;
+}
+.section-title { -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: -timer-text; }
+.secondary { -fx-font-size: 12px; -fx-text-fill: -timer-muted; }
+.settings-footer { -fx-padding: 14 0 0 0; -fx-spacing: 10; }
+.primary-button { -fx-background-color: -timer-accent; -fx-text-fill: -timer-on-accent; -fx-border-color: transparent; }
+.key-row { -fx-padding: 7 10; -fx-background-radius: 7; }
+.key-row:selected, .key-row.current-row { -fx-background-color: -timer-border; }
+.key-badge { -fx-padding: 3 9; -fx-background-color: -timer-bg; -fx-background-radius: 5; -fx-text-fill: -timer-text; -fx-font-family: 'Consolas'; }
+.settings-card .check-box { -fx-font-size: 13px; }

@@ -1,0 +1,28 @@
+# 构建产物
+target/
+out/
+*.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# 运行时数据永远不进这个仓库（真实位置是 D:\timer-data\）
+data/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.log
+
+# 本地环境与密钥
+.env
+**/.env
+!**/.env.example
+
+# 系统文件
+Thumbs.db
+.DS_Store

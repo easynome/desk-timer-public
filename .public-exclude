@@ -1,0 +1,7 @@
+# Paths never published to the public snapshot repo (read by tools/sync-public.ps1).
+# One git pathspec per line; '#' starts a comment. These stay in the dev repo only:
+# they carry personal context (job-search wording, machine fingerprints, the raw prompts).
+docs/dev/
+docs/prompts/
+docs/reviews/
+.github/
